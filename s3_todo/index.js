@@ -11,8 +11,25 @@ const submit = () => {
     list_elem.className="elem";
     list_elem.id="elem"+cnt;
     console.log(list_elem.className);
-    list_elem.innerText = "- "+item
+    list_elem.innerText = item
 
     //요소 추가
     todo_list.appendChild(list_elem);
+
+    //체크 박스 생성
+    let ck_box = document.createElement("input");
+    ck_box.type="checkbox"
+    ck_box.className="ck_box"
+    ck_box.id="ck_box"+cnt;
+    ck_box.addEventListener("click",isChecked());
+    //체크 박스 추가
+    ck_box_list.appendChild(ck_box);
+}
+
+const isChecked=()=>{
+    //전체 체크박스 순회하며 업데이트
+    for(i=1;i<=cnt;i++){
+        let ck_state = document.getElementById("elem"+i).checked;
+        console.log(ck_state);
+    }
 }
