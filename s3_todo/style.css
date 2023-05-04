@@ -70,3 +70,18 @@ body{
 .todo_list{
     gap: 10px;
 }
+.todo_wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.ck_box_list{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 10px;
+}
+.ck_box{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+}
