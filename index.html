@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title>to-do list</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">오늘의 할일</div>
+
+        <div class="body">3
+            <input type="text" class="todo" id="item" name="item" placeholder="할 일을 입력하세요!">
+            <button class="but" onclick="submit()">OK</button>
+        </div>
+    
+    <div class="todo_wrapper">
+        <div class="ck_box_list" id="ck_box_list">
+            <!--체크박스를 추가할 자리-->
+        </div>
+
+        <div class="todo_list" id="todo_list">
+            <!--요소를 추가할 자리-->
+        </div>
+    </div>
+
+    <button class="but" id="del_but" onclick="reset()">reset</button>
+
+</body>
+<script src="./index.js"></script>
+</html>
